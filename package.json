@@ -11,6 +11,8 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
+    "start:heroku":"node dist/server",
+    "postinstall":"npm run build:ssr" ,
     "build:client-and-server-bundles": "ng build --prod && ng run angular-universal-crud:server:production --bundleDependencies all"
   },
   "private": true,

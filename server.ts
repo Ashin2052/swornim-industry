@@ -37,7 +37,7 @@ const DIST_FOLDER = join(process.cwd(), 'dist/browser');
 const { AppServerModuleNgFactory, LAZY_MODULE_MAP, ngExpressEngine, provideModuleMap } = require('./dist/server/main');
 
 // MongoDB database settings
-mongoose.connect('mongodb://localhost/song-db', {
+mongoose.connect('mongodb+srv://mahatashin:barcelona@cluster0-ykjjj.mongodb.net/sattaKing?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
