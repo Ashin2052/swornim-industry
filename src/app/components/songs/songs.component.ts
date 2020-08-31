@@ -17,14 +17,10 @@ export class SongsComponent implements OnInit {
       this.Songs = item;
     });
 
-    this.meta.addTags([
-      {name: 'description', content: 'This is swornim bung industry .It is Swonim bung industry located in kathmandu nepal.Sworinim pipe industry is Smoking pipe manufacturar.'},
+    this.meta.updateTag(
       {name: 'author', content: 'Swornim mahat,saru mahat,ashin mahat'},
-      {name: 'keywords', content: "Swornim pipe industry nepal,Swornim Factory Nepal,Swornim Pipe Industry,"+
-                           "Swornim Mahat Industry Nepal kathmandu,Bung Industry in nepal,weed pipe factory nepal,Smoking pipe factory nepal,"+
-                          "Weed pipe industry kathmandu nepal,Swornim pipe industry nepal"}
-    ]);
-    this.setTitle('Swornim pipe industry nepal.Swornim smoking pipe industry kathmandu');
+
+    );
   }
 
   ngOnInit() { }
